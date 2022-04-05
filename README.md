@@ -1,5 +1,5 @@
 # BeanCounter
-BeanCounter is a Windows Forms Application written in C# and utilizing SQL Server for the backend. BeanCounter has been continuously developed for over 15 years now. The windows forms application will allow you to import QFX files into a SQL Server Backend. You can then run reports from within the application and also verify your transactions as they come in. It logs daily balances and is compatible with many banking institutions. 
+BeanCounter is a Windows Forms Application written in C# and utilizing SQL Server for the backend. It has been continuously developed for over 15 years now. The  application will allow you to import QFX files into a SQL Server Backend. You can then run reports from within the application and also verify your transactions as they come in. It keeps a log of your balances everytime you import your transactions and is compatible with many banking institutions. 
 
 The Project also contains the database schema in the form of a MS Database Project (solution). You can also find the PowerShell scripts that will create the SQL Server Database for you, using the schema provided within the database Project. 
 
