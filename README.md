@@ -5,6 +5,6 @@ The Project also contains the database schema in the form of a MS Database Proje
 
 The project was originally written in Visual Basic and then many years ago I rewrote it in C#. I will occasionally go in and do a debug session to the old project. I have not made any UI changes in years. I have mostly just been refactoring the code as of late as it was written a lifetime ago and my coding as infinity improved since then.
 
-It would be cool to modernize it someday be giving it a new UI and perhaps refactor it to be service oriented. Feel free to create a branch and submit a pull request.
+It would be cool to modernize it someday by giving it a new UI and perhaps refactor it to be more service oriented. Feel free to create a branch and submit a pull request.
 
-If you encounter any trouble importing the transactions, the application can be easily customized to account for any issues. In fact, a specific method already exists to account for anything special relating to a specific bank. 
+If you encounter any trouble importing the transactions, the application can be easily customized to account for any issues that you may face such as something specific to a certain bank. Some banks like to play tricks like reversing the fields to throw off vendors. However, we can easily account for such issues using our skills in C#.
