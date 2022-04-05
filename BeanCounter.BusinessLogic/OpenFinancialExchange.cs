@@ -98,15 +98,42 @@ namespace BeanCounter.BusinessLogic
             else if (balanceDateTime.Length > 18)
             {
                 //todo record timezone, etc.
-                _balanceDateTime = new DateTime(
-                    Convert.ToInt32(balanceDateTime.Substring(0, 4)),
-                    Convert.ToInt32(balanceDateTime.Substring(4, 2)),
-                    Convert.ToInt32(balanceDateTime.Substring(6, 2)),
-                    Convert.ToInt32(balanceDateTime.Substring(8, 2)),
-                    Convert.ToInt32(balanceDateTime.Substring(10, 2)),
-                    Convert.ToInt32(balanceDateTime.Substring(12, 2)),
-                    Convert.ToInt32(balanceDateTime.Substring(15, 3))
-                );
+                var year = Convert.ToInt32(balanceDateTime.Substring(0, 4));
+                var month = Convert.ToInt32(balanceDateTime.Substring(4, 2));
+                var day = Convert.ToInt32(balanceDateTime.Substring(6, 2));
+                var hour = Convert.ToInt32(balanceDateTime.Substring(8, 2));
+                var minute = Convert.ToInt32(balanceDateTime.Substring(10, 2));
+                var second = Convert.ToInt32(balanceDateTime.Substring(12, 2));
+
+                var remander = balanceDateTime.Substring(15, 3);
+                
+                var remanderIsNumeric = int.TryParse("123", out int microsecond);
+
+                //var microsecond = Convert.ToInt32(remander);
+
+                if (remanderIsNumeric)
+                {
+                    _balanceDateTime = new DateTime(
+                        year,
+                        month,
+                        day,
+                        hour,
+                        minute,
+                        second,
+                        microsecond
+                    );
+                } else
+                {
+                    _balanceDateTime = new DateTime(
+                        year,
+                        month,
+                        day,
+                        hour,
+                        minute,
+                        second
+                    );
+
+                }
             }
             return _balanceDateTime;
         }
