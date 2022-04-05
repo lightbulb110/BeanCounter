@@ -7,4 +7,4 @@ The project was originally written in Visual Basic and then many years ago I rew
 
 It would be cool to modernize it someday be giving it a new UI and perhaps refactor it to be service oriented. Feel free to create a branch and submit a pull request.
 
-If you encounter any trouble importing the transactions, the application can be easily customized to account for this issues. In fact, a specific method already exists to account for anything special relating to a specific bank. 
+If you encounter any trouble importing the transactions, the application can be easily customized to account for any issues. In fact, a specific method already exists to account for anything special relating to a specific bank. 
