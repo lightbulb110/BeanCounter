@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="d013bd9d-db43-489f-a45b-906933f620be" ChangeDateTime="01/28/2018 13:59:52">
+    <Property Name="ElementName" Value="[dbo].[tblOrginalTransaction]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[tblOriginalTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8bde876b-53b5-442b-90d5-8014f5392f24" ChangeDateTime="01/28/2018 14:00:05">
+    <Property Name="ElementName" Value="[dbo].[tblOriginalTransaction].[OrginalTransactionID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblOriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[OriginalTransactionID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="583f76f2-e50f-4814-aa5e-268cc9dc7253" ChangeDateTime="01/28/2018 14:00:19">
+    <Property Name="ElementName" Value="[dbo].[tblSplitTransaction].[OrginalTransactionID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSplitTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[OriginalTransactionID]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bee26cc5-370c-4501-a06d-9ee32fe50a9e" ChangeDateTime="01/28/2018 14:02:12">
+    <Property Name="ElementName" Value="[dbo].[PK_tblOrginalTransaction]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tblOriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_tblOriginalTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c616eb0f-fabf-412a-9472-3d5b93a55733" ChangeDateTime="01/28/2018 14:02:25">
+    <Property Name="ElementName" Value="[dbo].[FK_tblSplitTransaction_tblOrginalTransaction]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSplitTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_tblSplitTransaction_tblOriginalTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="08690b4a-cdd5-4cb0-b332-e56e0f43683b" ChangeDateTime="10/18/2019 18:09:58">
+    <Property Name="ElementName" Value="[dbo].[tblTrickyCategories].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblTrickyCategories]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AutoTransactionId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7dd0ae2-1c12-43b0-b915-c654c5a96b57" ChangeDateTime="07/02/2021 13:22:11">
+    <Property Name="ElementName" Value="[dbo].[tblBalanceHistory].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblBalanceHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BalanceHisotryId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8400b4a4-7206-437b-91b8-36f32176243c" ChangeDateTime="07/02/2021 14:38:01">
+    <Property Name="ElementName" Value="[dbo].[spInsertBalanceHistory]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spLogBalanceHistory]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5b9b40d1-7dc6-4e2f-ac29-d43eb43eec72" ChangeDateTime="07/02/2021 14:56:18">
+    <Property Name="ElementName" Value="[dbo].[spLogBalanceHistory]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[spLogAccountBalance]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fbfddde6-1932-40fb-b8d6-d30e334a38ae" ChangeDateTime="07/09/2021 19:22:45">
+    <Property Name="ElementName" Value="[dbo].[tblTrickyCategories]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[tblSpecialCategories]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="416bc1d3-77ac-4285-a82d-1b532ab58df4" ChangeDateTime="07/09/2021 19:26:18">
+    <Property Name="ElementName" Value="[dbo].[tblBankAccount]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[BankAccounts]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b803e073-c8f1-4e85-9587-6a98468e2dce" ChangeDateTime="07/09/2021 19:29:39">
+    <Property Name="ElementName" Value="[dbo].[tblBalanceForecast]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[BalanceForecast]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="246a9bb1-22ca-4d3e-b7ce-d90fe78a278a" ChangeDateTime="07/10/2021 19:49:25">
+    <Property Name="ElementName" Value="[dbo].[tblOriginalTransaction].[TransactionUsed]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblOriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[InitialTransactionDate]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6061114c-dd19-4d8b-8954-1b9467daa576" ChangeDateTime="07/14/2021 13:31:12">
+    <Property Name="ElementName" Value="[dbo].[tblOriginalTransaction].[TransactionDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblOriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[DatePosted]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3b419a4a-2577-4d22-a424-439a6be60a9d" ChangeDateTime="07/14/2021 13:32:00">
+    <Property Name="ElementName" Value="[dbo].[tblOriginalTransaction].[InitialTransactionDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblOriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[TransactionDate1]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="947a6bff-7ff1-42f1-a167-969d97b956ef" ChangeDateTime="07/14/2021 13:35:54">
+    <Property Name="ElementName" Value="[dbo].[tblOriginalTransaction].[TransactionDate1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblOriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[TransactionDate]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8eea1f61-5de5-4d0a-99eb-67627530ef3e" ChangeDateTime="07/16/2021 12:57:17">
+    <Property Name="ElementName" Value="[dbo].[tblBusinesses]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Businesses]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9b70019f-40c5-43c0-b817-3880c7b3687e" ChangeDateTime="07/16/2021 12:58:47">
+    <Property Name="ElementName" Value="[dbo].[tblBalanceHistory]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[BalanceHistory]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6b0748b6-590b-4251-9306-b65536622cde" ChangeDateTime="08/15/2021 17:28:00">
+    <Property Name="ElementName" Value="[dbo].[tblOriginalTransaction]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[OriginalTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ec4e64d0-48a2-4ab3-92c5-bb4f1b1e04e7" ChangeDateTime="08/15/2021 17:28:56">
+    <Property Name="ElementName" Value="[dbo].[PK_tblOriginalTransaction]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[OriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_OriginalTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1107954e-6dcf-40c7-8056-9d4ddb4273b0" ChangeDateTime="08/15/2021 17:29:06">
+    <Property Name="ElementName" Value="[dbo].[FK_tblOriginalTransaction_BankAccounts]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[OriginalTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_OriginalTransaction_BankAccounts]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3d9553be-6e08-4fd6-b242-0e2e2933d30d" ChangeDateTime="08/15/2021 17:29:20">
+    <Property Name="ElementName" Value="[dbo].[FK_tblSplitTransaction_tblOriginalTransaction]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[tblSplitTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_SplitTransaction_tblOriginalTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ed6f6c4b-2e3f-4944-8ce4-994858765b4b" ChangeDateTime="08/15/2021 17:34:30">
+    <Property Name="ElementName" Value="[dbo].[tblCategory]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Category]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6808c798-d58a-47ad-93a2-d1ee8f4384a4" ChangeDateTime="08/15/2021 17:34:47">
+    <Property Name="ElementName" Value="[dbo].[PK_tblCategory]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Category]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_Category]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a391dc01-d03e-4edf-9607-f683a08a1e16" ChangeDateTime="08/15/2021 17:35:00">
+    <Property Name="ElementName" Value="[dbo].[IX_tblCategoryName]" />
+    <Property Name="ElementType" Value="SqlUniqueConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Category]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_CategoryName]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a79bb10c-698d-429e-980a-174f195c15dc" ChangeDateTime="08/15/2021 17:37:25">
+    <Property Name="ElementName" Value="[dbo].[tblSplitTransaction]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[SplitTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f3854d12-a0ad-4cee-9fee-67e6e3b40db2" ChangeDateTime="08/15/2021 17:38:40">
+    <Property Name="ElementName" Value="[dbo].[PK_tblSplitTransaction]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[SplitTransaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_SplitTransaction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2299aaaa-9d9d-4146-94f0-3f45161f6c11" ChangeDateTime="08/15/2021 17:46:43">
+    <Property Name="ElementName" Value="[dbo].[tblSpecialCategories]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[SpecialCategories]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0d22b5ae-afb2-453e-92e8-be4f1461a48f" ChangeDateTime="08/15/2021 17:47:31">
+    <Property Name="ElementName" Value="[dbo].[PK_tblSpecialCategories]" />
+    <Property Name="ElementType" Value="SqlPrimaryKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[SpecialCategories]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[PK_SpecialCategories]" />
+  </Operation>
+</Operations>

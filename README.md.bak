@@ -9,10 +9,6 @@ It would be cool to modernize it someday by giving it a new UI and perhaps refac
 
 If you encounter any trouble importing the transactions, the application can be easily customized to account for any issues that you may face such as something specific to a certain bank. Some banks like to play tricks like reversing the fields to throw off vendors. However, we can easily account for such issues using our skills in C#.
 
-# Security
-
-This solution doesn't make any outbound connections and stores all necessary data locally. The solution is available for inspection.
-
 # Setup
 Clone the repository. Build the solution and deploy the binaries. Install Sql Server Developer edition.
 
